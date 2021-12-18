@@ -98,7 +98,7 @@ class Maquetacion:
 		self.entrada_busqueda = Entry(self.window, bg='#ecffe8')
 		self.entrada_busqueda.grid(row=12, column=4)
 		self.entrada_busqueda.focus()
-		self.imagen = PhotoImage(file="lupa2.png") 
+		self.imagen = PhotoImage(file="img/lupa2.png") 
 		self.boton_busqueda = Button(self.window,
 			command=lambda:self.logica.buscar(self.busqueda.get(),
 				self.entrada_busqueda.get(),self.tree, self.aviso) 

@@ -53,8 +53,8 @@ class Crud:
 		parametros asignados por medio del método buscar del 
 		módulo logica para luego ser vertidos en el treeview
 		del módulo maquetacion."""
-		query = f'''SELECT * FROM Librería where {dato} = 
-			"{entrada}" order by Código DESC'''
+		query = f'''SELECT * FROM Librería WHERE {dato} LIKE 
+			"%{entrada}%" COLLATE NOCASE ORDER BY Código DESC'''
 		return self.seleccionar_datos(query)
 
 	def ventana_editar(self, id):
